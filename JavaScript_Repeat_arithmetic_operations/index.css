@@ -1,0 +1,25 @@
+.cal_box {
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 23.5px;
+    border: solid;
+    width: 400px;
+    height: 420px;
+}
+.cal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h2 {
+    text-align: center;
+}
+/* .input_box {
+    top: 215px;
+} */
+.output_box {
+    text-align: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <!-- <link rel="stylesheet" href="./index.js"> -->
+    <title>사칙연산</title>
+</head>
+<body>
+    <div class='cal_box'>
+        <div class="cal">
+            <h1>오스모스의 사칙연산 놀이</h1>
+            <div class='input'>
+                <h2>입력칸</h2>
+                <div class="input_box">
+                    <input type="text" id='input1'> <br>
+                    <input type="text" id='input2'>
+                </div>
+            </div>
+            <div class='button'>
+                <h2>기능 버튼</h2>
+                <button id='plus' onclick="plus()">+</button>
+                <button id='subtract' onclick="subtract()">–</button>
+                <button id='multiply' onclick="multiply()">×</button>
+                <button id='divide' onclick="divide()">÷</button>
+            </div>
+            <div class='output'>
+                <h2>출력칸</h2>
+                <div class='output_box'>
+                    <span id='output'></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function plus(){
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+
+            document.getElementById('output').innerHTML = parseInt(num1) + parseInt(num2);
+        }
+        function subtract(){
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+
+            document.getElementById('output').innerHTML = parseInt(num1) - parseInt(num2);
+        }
+        function multiply(){
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+
+            document.getElementById('output').innerHTML = parseInt(num1) * parseInt(num2);
+        }
+        function divide(){
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+
+            document.getElementById('output').innerHTML = parseInt(num1) / parseInt(num2);
+        }
+        // ~ is not a function 등의 오류는 내부냐 외부냐의 문제다.
+    </script>
+</body>
+</html>
